@@ -32,6 +32,7 @@ backend/models/*.pt
 backend/models/*.bin
 backend/models/*.onnx
 frontend/public/models/*.onnx
+frontend/public/*.wasm
 
 # 上传文件
 backend/uploads/
