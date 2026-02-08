@@ -46,9 +46,13 @@ export const MODEL_REGISTRY: Record<string, ModelConfig> = {
     name: 'SAM1 ViT-B',
     size: 375,
     params: 91,
-    supportedModes: ['backend', 'hybrid'],
-    hasONNX: false,
+    supportedModes: ['frontend', 'backend', 'hybrid'],
+    hasONNX: true,
     features: ['点击分割', '边界框'],
+    onnxPaths: {
+      encoder: '/models/sam1_encoder_vit_b.onnx',
+      decoder: '/models/sam1_decoder.onnx',
+    },
   },
   sam1_vit_l: {
     id: 'sam1_vit_l',
